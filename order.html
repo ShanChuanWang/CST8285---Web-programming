@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shuai Wang">
+    <meta name="email" content="wang0878@@algonquinlive.com">
+    <meta name="date" content="2022-05-26">
+    <style>
+        div {
+            margin-bottom: 5px;
+        }
+        .format_1 {
+            display: inline-block;
+            width: 70px;
+        }
+        .format_2 {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        .formfield * {
+            vertical-align:middle
+        }
+        .inline {
+            display: inline-block;
+        }
+        .inline_right {
+            display: inline-block;
+            width: 300px;
+            text-align: right;
+        }
+    </style>
+    <title>Order</title>
+ 
+</head>
+
+<body>
+    <form action="Lab_2.html" target="_blank">
+        <fieldset class="Order Form">
+            <h3 style="color: orange">Order Form</h3>
+            <fieldset class="Basic Information">
+                <legend>Basic Information</legend>
+                <div >
+                    <label for="FullName" class="format_1">Name:</label>
+                    <input type="text" id="FullName" name="FullName" value="Shuai" size="30" disabled>
+                </div>
+                <div>
+                    <label for="email" class="format_1">Email:</label>
+                    <input type="email" id="email" name="email" value="wang0878@algonquinlive.com" size="30">
+                </div>
+                <div class="formfield">
+                    <label for="Address" class="format_1">Address:</label>
+                    <textarea name="Address" id="Address" cols="25" rows="5"></textarea>
+                </div>
+                <div>
+                    <label for="Postcode" class="format_1">Postcode:&nbsp;</label>
+                    <input type="text" id="Postcode" name="Postcode">
+                </div>
+            </fieldset>
+            <br><br>
+            <fieldset class="Prodcut Information">
+                <legend>Prodcut Information</legend>
+                <table>
+                    <tr>
+                        <th><b>Prodcut</b></th>
+                        <th style="width:100px;"><b>Part Number</b></th>
+                        <th style="width:100px"><b>Quantity</b></th>
+                        <th style="width:100px"><b>Unit Price</b></th>
+                        <th style="width:300px;"><b>Subtotal</b></th>
+                    </tr>
+                    <tr>
+                        <td>Box</td>
+                        <td>AC100</td>
+                        <td></td>
+                        <td>$5</td>
+                        <td inputmode="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Coffee Table</td>
+                        <td>AC200</td>
+                        <td></td>
+                        <td>$100</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Chair</td>
+                        <td>AC300</td>
+                        <td></td>
+                        <td>$150</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Desk</td>
+                        <td>AC400</td>
+                        <td></td>
+                        <td>$120</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Computer Table</td>
+                        <td>AC500</td>
+                        <td></td>
+                        <td>$130</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align:right">Total:</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <div>
+                <h4>Credit Card Information</h4>
+                <div>
+                    <div class="inline">
+                        <label>
+                            Card Type: <input name="CardType" hidden="true">
+                        </label><br>
+                        <input type="radio" id="MasterCard" name="CardType" value="MasterCard">
+                        <label for="MasterCard">MasterCard</label><br>
+                        <input type="radio" id="Visa" name="CardType" value="Visa">
+                        <label for="Visa">Visa</label><br>
+                        <input type="radio" id="GiftCard" name="CardType" value="Gift Card">
+                        <label for="GiftCard">Gift Card</label><br>
+                    </div>
+                    <div class="inline">
+                        <div>
+                        <label for="CardNumber" class="format_2">Card Number:</label>
+                        <input type="text" id="CardNumber" name="CardNumber">
+                        </div>
+                        <br>
+                        <div>
+                        <label for="ExpiryDate" class="format_2">Expiry Date:</label>
+                        <input type="Date" name="ExpiryDate" id="ExpiryDate">
+                        </div>
+                    </div>
+                </div>
+                    <div class="formfield">
+                        <label for="DeliveryAddress" style="vertical-align:middle"><b>Delivery Address:</b></label>
+                        <textarea name="DeliveryAddress" id="DeliveryAddress" cols="25" rows="5"></textarea>
+                    </div>
+            </div>
+            <br><br>
+            <input type="submit" value="Send Order">
+            <input type="reset" value="Clear Form">
+        </fieldset>
+    </form>
+</body>
+</html>
