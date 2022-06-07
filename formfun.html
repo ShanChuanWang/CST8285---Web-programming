@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Frank Emanuel">
+    <meta name="email" content="emanuef@algonquincollege.com">
+    <meta name="date" content="2022-05-24">
+    <title>Fun with Forms in HTML</title>
+
+    <style>
+        form {
+            border: 3px green dotted;
+            border-radius: 15px;
+        }
+
+        #withborder, .lined {
+            border: 2px black solid;
+        }
+
+        #special {
+
+            background-color: blueviolet;
+        }
+    </style>
+
+    <script>
+        
+        function validate() {
+
+            // This form expects a value in somevalue (id)
+            // compare somevalue with the value 'Frank' and 'frank'
+            // returns true if the comparison fails
+
+            let returnValue = true;
+
+            if (someValue.value == "Frank" || someValue.value == "frank"){
+
+                returnValue = false;
+                someValue.value = "Gary";
+            }
+
+            return returnValue;    
+
+        }
+
+    </script>
+</head>
+<body>
+    <header>Fun with Forms in HTML</header>
+
+    <h3 class="george">front-end validation: HTML, JavaScript</h3>
+
+    <form action="" 
+        onsubmit="return validate()" method="get">
+
+        <p>Some text.</p>
+
+        <fieldset style="background-color: rgb(239, 74, 74);" >
+            <legend>The topmost Form!!!!</legend>
+            <input type="radio" name="fredvalue">Fred rules! <br>
+            <input type="text" name="theName" id="someValue">
+        </fieldset>
+
+
+        <p class="bodytext">this text is not formatted yet.</p>
+
+        <button type="submit">Press Me</button>
+
+    </form>
+
+       
+
+    <form action="" method="get" >
+
+        <input type="text" name="otherValue" >
+
+        <button type="submit">No Press Me</button>
+    </form>
+    
+
+
+</body>
+</html>
