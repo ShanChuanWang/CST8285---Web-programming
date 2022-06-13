@@ -1,2 +1,90 @@
 /* Shuai Wang */
 
+body {
+    background-color: #ddd78d;
+    font-family: sans-serif;
+    color: #3D0C02;
+}
+
+.lab_03_section1 {
+    width: 100%;
+    background-color: #60594D;
+    border: 3px solid black;
+    padding: 10px;
+}
+.lab_03_section1 h2 {
+    font-size: 3vmax;
+    color: #93A29B;
+}
+.center_format {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    width: auto;
+    background-color: white;
+    border:none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding: 5px;
+}
+.button:hover,
+.gototop:hover {
+    color:#8B635C;
+    transform: scale(1.2);
+} 
+
+.text {
+    justify-content: left;
+    margin: auto 10px;
+}
+.text h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.text h4 {
+    font-size: 19px;
+    font-weight: bold;
+}
+p{
+    font-size: 19px;
+    margin: 10px auto;
+}
+
+ol li {
+    font-size: 19px;
+    margin: 10px auto;
+}
+.block-quote {
+    width: 95%;
+    background-color: #dcbf85;
+    font-size: 19px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.waterfall {
+    width: 25%;
+    margin: 10px;
+    float: right;
+}
+
+.gototop {
+    font-size: xx-large;
+    color: #93A29B;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.author {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 20px;
+}
