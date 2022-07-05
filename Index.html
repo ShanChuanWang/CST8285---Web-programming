@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shuai Wang">
+    <meta name="email" content="wang0878@@algonquinlive.com">
+    <meta name="date" content="2022-06-06">
+    <title>index.html</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- first section starts here-->
+        <header>
+        <nav class="navbar">
+            <h1 class="logo">Wel<span>come</span></h1>
+            <a href="Index.html">Home</a>
+            <a href="Aboutme.html">About Me</a>
+            <a href="Myskills.html">My Skills</a>
+            <a href="Courses.html">My Courses</a>
+            <a href="#" class="button">Subscribe</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="landingpage">
+            <div class="content">
+                <h1>Welcome to my page</h1>
+                <p>
+                    Want to get any news about me, input your email below and click on "Get news".
+                </p>
+                <div class="mynews">
+                    <form>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                        <input type="submit" name="submit" value="Get News">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- About me starts here-->
+        <div class="aboutme" id="aboutme">
+            <div class="aboutme-main">
+                <img src="Image/Zhongshan.jpeg" alt="Zhongshan">
+                <div class="aboutme-text">
+                    <h2>About Me</h2>
+                    <h5>Future Developer & <span>designer</span></h5>
+                    <p>
+                        I am Shuai Wang, from China. Ottawa is the first city since I came to Canada in 2018.
+                        I like playing soccer. I have a team used to play in Kanata, we really enjoy it. I am now enrolled in 
+                        Computer Programming Co-op program in <a href="https://www.algonquincollege.com/" target="_blank">Alongquin College</a>,
+                        this is my second term. 
+                    </p>
+                    <button class="button" type="button">click on me</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Myskills starts here-->
+        <div class="skills" id="skills">
+            <div class="skills-main">
+                <img src="Image/picture.jpeg" alt="Shuai">
+                <div class="skills-text">
+                    <h2>What I know</h2>
+                    <h4>Experieces</h4>
+                    <ul class="experieces">
+                        <li>technical assistant: 4.5 years</li>
+                        <li>project manager (PMP®): 6 years</li>
+                        <li>software engineer: 3 years</li>
+                        <li>Clockwork, JIRA: Proficient</li>
+                        <li>Java, HTML, Linux, Database: Learning</li>
+                    </ul>
+                    <h4>Education</h4>
+                    <ul class="education">
+                        <li class="this-one-only">Algonquin College: 2022.1 - now</li>
+                        <li>Carleton University: Master, 2016 - 2018</li>
+                        <li>PMP®: since 2013</li>
+                        <li>Shandong University: Bachelor, 2003 - 2006</li>
+                    </ul>
+                    <h4>Goals</h4>
+                    <ul class="goals">
+                        <li>To be a professional software developer and designer.</li>
+                    </ul>
+                    <h4>Completed Labs</h4>
+                    <div class="labs">
+                        <div class="lab1">
+                            <p>Lab 1</p>
+                            <a href="Lab1/hometown.html" target="_blank">
+                                <img src="lab1-picture.png" alt="lab1"></a>
+                        </div>
+                        <div class="lab2">
+                            <p>Lab 2</p>
+                            <a href="Lab2/order.html" target="_blank">
+                                <img src="lab2-picture.png" alt="lab2"></a>
+                        </div>
+                        <div class="lab3">
+                            <p>Lab 3</p>
+                            <a href="Lab3/Lab3.html" target="_blank">
+                                <img src="lab3-picture.png" alt="lab3"></a>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--courses starts here-->
+        <div class="courses" id="courses">
+            <div class="courses-title">
+                <h2>My courses</h2>
+                <div class="search-list">
+                    <div class="search-container">
+                        <form action="Index.html" method="get">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="sort">
+                        <form>
+                            <button type="button">Highest to lowest</button>
+                            <button type="button">Lowest to highest</button>
+                        </form>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Select</button>
+                        <div class="dropdown-content">
+                            <a href="#">Level 1</a>
+                            <a href="#">Level 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-text">
+                <div class="card">
+                    <i class="fa-brands fa-java"></i>
+                    <h4>Java</h4>
+                    <p>Level: 1 & 2</p>
+                    <p>Course code: CST8116 & CST8284</p>
+                    <p>
+                        Working in the field of information technology as a programmer requires a firm understanding of Object-Oriented Programming (OOP) concepts. 
+                        Students explore object-oriented programming methodology using the Java programming language. Object oriented concepts, such as encapsulation, 
+                        inheritance, abstraction and polymorphism are covered and reinforced with practical applications. Students explore the basics of data structures 
+                        and algorithms as well as basic Graphical User Interface (GUI) programming <a href="https://www.algonquincollege.com/sat/program/computer-programming/#courses">Source Page</a>.
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h5>HTML</h5>
+                    <p>Level: 1 & 2</p>
+                    <p>Course code: CST8285</p>
+                    <p>
+                        The World Wide Web (WWW) has become an integrated part of everyday life. Students develop basic skills of web programming, 
+                        website design and implementation. JavaScript, HTML5, and PHP are used to explore web-based solutions to problems of increasing interactivity and complexity. 
+                        Lectures are reinforced by practical assignments that encourage students to construct and maintain their own websites <a href="https://www.algonquincollege.com/sat/program/computer-programming/#courses">Source Page</a>.
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-database"></i>
+                    <h5>Database</h5>
+                    <p>Level: 1 & 2</p>
+                    <p>Course code: CST8215 & CST2355</p>
+                    <p>
+                        Database systems can automate data processing tasks as well as tie into the security of information technology systems.
+                        Students acquire practical experience using market-leading object-relational database management systems like Oracle and MySQL.
+                        Students obtain hands-on experience with advanced engineering modeling tools along with SQL, SQL scripts and programming with Oracle's PL/SQL blocks.
+                        Database concepts covered include advanced SQL, case structures, rollup and cube operations, metadata manipulation, data storage and retrieval, security and 
+                        transaction control and data warehousing <a href="https://www.algonquincollege.com/sat/program/computer-programming/#courses">Source Page</a>.
+                    </p>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-linux"></i>
+                    <h5>Linux</h5>
+                    <p>Level: 2</p>
+                    <p>Course code: CST8102</p>
+                    <p>
+                        Operating systems form the backbone of information technology systems coordinating the interaction between hardware and software.
+                        Students explore the basic concepts and components of Operating Systems (OS), and how they function and interact with hardware and software components. 
+                        Students examine the details of operating system structures, process management, storage management, installation, configuration, and administration 
+                        both in theory and through practical assignments based on the GNU/Linux operating system <a href="https://www.algonquincollege.com/sat/program/computer-programming/#courses">Source Page</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer starts here -->
+    <footer>
+        <div class="socialmedia" id="contactme">
+            <div class="contactme">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="icons">
+                <a href="mailto:wang0878@algonquinlive.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.facebook.com/jackie.wang.505/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/Shuaisdu" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="www.linkedin.com/in/shuai-wang-97413968" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ShanChuanWang" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <p class="author">
+                <i class="fa-solid fa-copyright"></i>Shuai
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

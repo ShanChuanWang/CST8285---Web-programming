@@ -1,29 +1,44 @@
 *{
     padding: 10;
-    margin: 10;
-    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
-.Shuai {
-    height: 100vh;
-    width: 100%;
-    background-image: url(image/Edward.jpeg);
-    background-size: cover;
-    background-position: center;
+header {
+    margin: 0px;
+    background-color: black;
+    height: 70px;
 }
-
-nav {
+.navbar {
     display: flex;
+    height: 70px;
     align-items: center;
     justify-content: space-between;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-left: 8%;
     padding-right: 8%;
 }
+.navbar a {
+    color: white;
+    height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover {
+    color: Red;
+    transition: .4s;
+    font-size: large;
+}
+
 .logo {
-    color: Black;
-    font-size: 35px;
+    color: blueviolet;
+    height: 50px;
+    font-size: 30px;
     letter-spacing: 1px;
     cursor: pointer;
 }
@@ -32,32 +47,13 @@ span {
     color: red;
 }
 
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 45px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-
-nav ul li a:hover {
-    color: Red;
-    transition: .4s;
-    font-size: large;
-}
-
 .button {
     background-color: red;
     font-weight: bold;
     color:white;
     text-decoration: none;
     border: 2px solid transparent;
-    padding: 10px 25px;
+    padding: 5px 25px;
     border-radius: 20px;
     transition: transform .4s;
 }
@@ -65,30 +61,46 @@ nav ul li a:hover {
 .button:hover {
     transform: scale(1.2);
 }
+.navbar .button {
+    height: 40px;
+    width: 130px;
+    margin-top: -10px;
+    padding-top: 7px;
+}
+.navbar .button:hover {
+    color: wheat;
+    transform: scale(1.2);
+}
 
+.landingpage {
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/Edward.jpeg);
+    background-size: cover;
+    background-position: center;
+}
 .content {
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
 }
-
-h1 {
-    color: Black;
-    font-size: 45px;
-    margin: 20px 0px 20px;
+.content h1 {
+    font-size: 40px;
+    color: black;
+    line-height: 15px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
 }
-h3 {
-    color: Black;
-    font-size: 25px;
+.content p {
+    width: 400px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 1px;
     margin-bottom: 40px;
 }
-h4 {
-    color: blue;
-    font-size: 20px;
-    letter-spacing: 1.5px;
-}
-
 .mynews form {
     width: 380px;
     max-width: 100%;
@@ -118,14 +130,9 @@ h4 {
 
 .aboutme {
     background-color: black;
-    width: 100%;    
+    width: 100%;
+    height: 595px;
     padding: 50px 0px;
-}
-.aboutme img {
-    width: 300px;
-}
-.aboutme-text {
-    width: 500px;
 }
 .aboutme-main {
     width: 1100px;
@@ -134,6 +141,12 @@ h4 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.aboutme img {
+    width: 30%;
+}
+.aboutme-text {
+    width: 500px;
 }
 .aboutme h2 {
     color: white;
@@ -153,24 +166,143 @@ h4 {
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 1px;
-    text-transform: capitalize;
     margin-bottom: 40px;
 }
+.aboutme p a {
+    text-decoration: none;
+    color: yellowgreen;
+}
+.skills-main {
+    width: 100%;
+    height: 595px;
+    background-color:#FAEBD7;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.skills-main img {
+    width: 35%;
+    border-radius: 50px;
+    margin: auto 50px;
+}
+.skills-text {
+    width: 500px;
+    margin: auto 50px;
+}
+.skills-text h2 {
+    color: #D2691E;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.skills-text ul {
+    margin-bottom: 10px;
+}
+.skills-text ul li {
+    padding-left: 10px;
+}
+.this-one-only {
+    list-style-type: circle;
+}
+.experieces {
+    list-style-type: "\1F44D";
+}
+.goals {
+    list-style-type:none;
+}
+.labs {
+    display: flex;
+}
+.lab1, .lab2, .lab3 {
+    width: 150px;
+    position: relative;
+    text-align: center;
+}
+.lab1 img {
+    width: 30px;
+}
+.lab2 img, .lab3 img {
+    height: 50%;
+}
+.skills-text p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
 
-.skills {
+.courses {
     background-color:  #101011;
-    width: 100%;    
+    width: 100%;
+    height: 595px;
     padding: 50px 0px;
 }
 
-.skills-title h2 {
+.courses-title {
+    display: flex;
+}
+.courses-title h2 {
+    width: 80%;
     color: white;
     font-size: 60px;
-    width: 1000px;
-    margin: 30px auto;
+    margin: 10px auto;
     text-align: center;
 }
-.skills-text {
+.search-list {
+    position: relative;
+    width: 30%;
+    margin-top: 0px;
+}
+.search-container,
+.sort {
+    margin-bottom: 5px;
+}
+.search-container input {
+    width: 200px;
+}
+.dropbtn {
+    background-color: red;
+    color: white;
+    width: 200px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+.drop-down {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.courses-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,11 +310,11 @@ h4 {
 }
 .card {
     background-color:antiquewhite;
-    height: 300px;
+    height: 350px;
     width: 400px;
-    padding: 20px 30px;
+    padding: 10px 10px;
     border-radius: 20px;
-    margin: 20px;
+    margin: 10px;
     position: relative;
     text-align: center;
 }
@@ -192,4 +324,51 @@ h4 {
     display:block;
     text-align: center;
     margin: 20px auto;
+}
+
+.card p {
+    text-align: left;
+    font-size: 10px;
+}
+.socialmedia {
+    background-color: black;
+    width: 100%;
+    padding: 10px auto;
+}
+.contactme h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+}
+.icons {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.icons i {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    color: red;
+    margin: 10px 40px;
+}
+.icons i::before {
+    font-size: 40px;
+}
+.icons i:hover {
+    transition: .4s;
+    transform: scale(1.2);
+}
+.author {
+    display: block;
+    color: red;
+    text-align: right;
+    font-style: italic;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.author i {
+    padding-right: 10px;
 }
