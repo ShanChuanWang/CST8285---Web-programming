@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add authorship metadata and link CSS and JS files -->
     <link rel="stylesheet" href="weeklykitten.css">
+    <script src="js/script.js" defer></script>
     <title>Lab 5 - JavaScript 1</title>
+    <style>
+        .warning {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <div class="formcontainer">
         <h1>Weekly Kitten Pictures Subsription</h1>
         <hr>
-        <form action="registration.html" method="get" onsubmit="return validate();">
+        <form name="form" action="registration.html" method="get" onsubmit="return validate();">
             <!-- You will need to write the validate function for this form. -->
 
             <div class="textfield">
@@ -28,7 +34,7 @@
                 <label for="pass">Password</label>
                 <input type="password" name="pass" id="pass" placeholder="Password">
             </div>
-
+        
             <div class="textfield">
                 <label for="pass2">Re-type Password</label>
                 <input type="password" id="pass2" placeholder="Password">
@@ -46,7 +52,6 @@
 
             <button class="submitbutton" type="submit">Sign-Up</button>
             <button class="resetbutton" type="reset">Reset</button>
-
         </form>
     </div>
 
